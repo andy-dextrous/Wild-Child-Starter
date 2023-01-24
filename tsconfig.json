@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "wildChildComponents": [
+        "node_modules/gatsby-theme-wild-child/src/components"
+      ]
+    },
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",

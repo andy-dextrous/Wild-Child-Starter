@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  siteUrl: "https://wildcreative.com.au",
+  siteUrl: "http://mealiemcscriv.local/",
   siteTitle: "WILD Creative | Websites, Content and SEO",
   businessName: "WILD Creative",
   siteDescription: "Websites, Content and SEO",
@@ -9,7 +9,7 @@ const SITE_CONFIG = {
   /**** THEME OPTIONS ****/
   cssVarPrefix: "wild",
   shouldShowBreakpoints: false,
-  smoothScroll: true,
+  smoothScroll: false,
   usePageTransitions: false,
   useTransitionModal: false,
   menuPlacement: "top",

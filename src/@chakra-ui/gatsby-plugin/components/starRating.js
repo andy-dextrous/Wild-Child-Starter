@@ -1,4 +1,4 @@
-import { StarRating as defaults } from "wildSrc/@chakra-ui/gatsby-plugin/components/starRating"
+import { StarRating as defaults } from "gatsby-theme-wild-child/src/@chakra-ui/gatsby-plugin/components/starRating"
 
 export const StarRating = {
   ...defaults,

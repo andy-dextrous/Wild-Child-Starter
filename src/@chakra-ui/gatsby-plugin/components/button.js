@@ -1,28 +1,208 @@
 /*** Remove imports if you want to override all defaults ***/
 
-import { Button as defaultButton } from "wildSrc/@chakra-ui/gatsby-plugin/components/button.js"
+import { Button as defaultButton } from "gatsby-theme-wild-child/src/@chakra-ui/gatsby-plugin/components/button.js"
 
 export const Button = {
   ...defaultButton,
 
   baseStyle: {
     ...defaultButton.baseStyle,
+    transition: "all 0.1s ease-out",
+    letterSpacing: "narrow",
     rounded: "full",
-    textTransform: "none",
-    letterSpacing: 0,
+    _hover: {
+      transform: "none",
+    },
+    _focus: {
+      boxShadow: "none",
+    },
   },
 
   variants: {
     ...defaultButton.variants,
-    primary: {
-      ...defaultButton.variants.primary,
+    primary: props => ({
+      bg: "transparent",
       color: "white",
+      zIndex: 1,
+      position: "relative",
+      overflow: "hidden",
+      border: "1px solid",
+      borderColor: "primary.500",
+      rounded: "full",
+      transformOrigin: "center",
+      _after: {
+        content: "''",
+        width: "100%",
+        height: "100%",
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        transition: "transform .15s cubic-bezier(.785,.135,.15,.86)",
+        transformOrigin: "left center",
+        bg: "primary.500",
+        position: "absolute",
+        transform: "scale(1)",
+        zIndex: "-1",
+      },
+      _before: {
+        content: "''",
+        width: "100%",
+        height: "100%",
+        bg: "primary.600",
+        position: "absolute",
+        zIndex: "-2",
+      },
+      _active: {
+        transform: "scale(0.95)",
+      },
+      _hover: {
+        transform: "scale(0.98)",
+        borderColor: "primary.600",
+        _after: {
+          transform: "scaleX(0)",
+          transformOrigin: "right center",
+        },
+      },
+    }),
+    secondary: () => ({
+      bg: "transparent",
+      color: "white",
+      zIndex: 1,
+      position: "relative",
+      overflow: "hidden",
+      border: "1px solid",
+      borderColor: "secondary.700",
+      rounded: "full",
+      transformOrigin: "center",
+      _after: {
+        content: "''",
+        width: "100%",
+        height: "100%",
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        transition: "transform .15s cubic-bezier(.785,.135,.15,.86)",
+        transformOrigin: "left center",
+        bg: "secondary.default",
+        position: "absolute",
+        transform: "scale(1)",
+        zIndex: "-1",
+      },
+      _before: {
+        content: "''",
+        width: "100%",
+        height: "100%",
+        bg: "secondary.600",
+        position: "absolute",
+        zIndex: "-2",
+      },
+      _active: {
+        transform: "scale(0.95)",
+      },
+      _hover: {
+        transform: "scale(0.98)",
+        borderColor: "secondary.600",
+        _after: {
+          transform: "scaleX(0)",
+          transformOrigin: "right center",
+        },
+      },
+    }),
+    white: () => ({
+      bg: "transparent",
+      color: "dark.default",
+      zIndex: 1,
+      position: "relative",
+      overflow: "hidden",
+      border: "1px solid",
+      borderColor: "white",
+      rounded: "full",
+      transformOrigin: "center",
+      _after: {
+        content: "''",
+        width: "100%",
+        height: "100%",
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        transition: "transform .15s cubic-bezier(.785,.135,.15,.86)",
+        transformOrigin: "left center",
+        bg: "white",
+        position: "absolute",
+        transform: "scale(1)",
+        zIndex: "-1",
+      },
+      _before: {
+        content: "''",
+        width: "100%",
+        height: "100%",
+        bg: "gray.100",
+        position: "absolute",
+        zIndex: "-2",
+      },
+      _active: {
+        transform: "scale(0.95)",
+      },
+      _hover: {
+        transform: "scale(0.98)",
+        borderColor: "gray.100",
+        _after: {
+          transform: "scaleX(0)",
+          transformOrigin: "right center",
+        },
+      },
+    }),
+    paginationNav: {
+      bg: "gray.100",
+      border: "1px solid",
+      borderColor: "gray.100",
+      svg: { fill: "dark.default" },
+      width: ["2.7rem", "2.7rem", "3.25rem"],
+      height: ["2.7rem", "2.7rem", "3.25rem"],
+      lineHeight: ["2.7rem", "2.7rem", "3.25rem"],
+      minWidth: ["2.7rem", "2.7rem", "3.25rem"],
+      py: 2,
+      px: 2,
+    },
+    paginationCurrent: {
+      color: "white",
+      width: ["2.7rem", "2.7rem", "3.25rem"],
+      height: ["2.7rem", "2.7rem", "3.25rem"],
+      lineHeight: ["2.7rem", "2.7rem", "3.25rem"],
+      minWidth: ["2.7rem", "2.7rem", "3.25rem"],
+      py: 2,
+      px: 2,
+      bg: "primary.default",
+      color: "white",
+      "&:disabled": {
+        opacity: 0.9,
+      },
+      "&:disabled:hover": {
+        bg: "primary.default",
+      },
+    },
+  },
+
+  sizes: {
+    ...defaultButton.sizes,
+    lg: {
+      ...defaultButton.sizes.lg,
+      fontSize: "15px",
+      letterSpacing: "narrow",
+    },
+    xl: {
+      ...defaultButton.sizes.xl,
+      px: "3rem",
+      py: "1.6rem",
     },
   },
 
   defaultProps: {
     ...defaultButton.defaultProps,
-    size: "xl",
+    size: "lg",
     variant: "primary",
   },
 }

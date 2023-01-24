@@ -19,13 +19,13 @@ export const fontSizes = {
 }
 
 export const fonts = {
-  heading: `neue-haas-grotesk-display, sans-serif, ${theme.fonts.heading}`,
-  body: `"neue-haas-grotesk-display, sans-serif", ${theme.fonts.body}`,
+  heading: `Inter, sans-serif, ${theme.fonts.heading}`,
+  body: `Inter, sans-serif, ${theme.fonts.body}`,
 }
 
 const heading = {
   fontFamily: fonts.heading,
-  fontWeight: "700",
+  fontWeight: "800",
   fontStyle: "normal",
 }
 
@@ -35,7 +35,7 @@ export const p = {
   letterSpacing: "-0.003em",
   lineHeight: 1.6,
   fontWeight: "400",
-  color: "dark.default",
+  color: "gray.600",
   mb: 2,
 }
 

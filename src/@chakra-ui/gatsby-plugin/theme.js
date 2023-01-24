@@ -4,7 +4,6 @@ import { textStyles } from "./textStyles"
 import { layerStyles } from "./layerStyles"
 import { styles } from "./globalStyle"
 import components from "./components"
-import sections from "./sections"
 import {
   colors,
   fonts,
@@ -32,7 +31,6 @@ const theme = extendTheme({
   styles,
   components: {
     ...components,
-    ...sections,
   },
   config: {
     cssVarPrefix: options.cssVarPrefix || "wild",

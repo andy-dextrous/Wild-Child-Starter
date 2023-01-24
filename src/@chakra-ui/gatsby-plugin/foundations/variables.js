@@ -1,19 +1,19 @@
-import { variables as defaults } from "wildSrc/@chakra-ui/gatsby-plugin/foundations/variables.js"
+import { variables as defaults } from "gatsby-theme-wild-child/src/@chakra-ui/gatsby-plugin/foundations/variables.js"
 
 export const variables = {
   ...defaults,
 
   // NAV
   navHeight: ["70px", "70px", "85px"],
-  siteMarginTop: ["70px", "70px", "85px"],
-  sideMenuWidth: "80px",
+  siteMarginTop: [0, 0, "125px"],
+  sideMenuWidth: "0",
   logoHeight: "100%",
-  logoWidth: "170px",
+  logoWidth: "100px",
 
   /*** SECTIONS ***/
-  contentMaxWidth: "1400px",
+  contentMaxWidth: "1360px",
   sectionPaddingY: [0],
-  sectionPaddingX: [5, 5, 12, 20, 24, 40],
+  sectionPaddingX: [4, 4, 12, 20, 24, 40],
   containerPaddingY: [20, 20, 32],
   containerPaddingX: [0],
   componentSpacing: [4, 8, 8, 8, 8],

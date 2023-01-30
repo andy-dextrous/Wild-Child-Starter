@@ -9,7 +9,7 @@ export const Head = ({ location, data, pageContext }: HeadProps) => (
 
 export default BlogPage
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   query ($skip: Int!, $limit: Int!) {
     wpPage(isPostsPage: { eq: true }) {
       title

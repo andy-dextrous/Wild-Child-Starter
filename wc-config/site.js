@@ -5,6 +5,7 @@ const SITE_CONFIG = {
   siteDescription: "Websites, Content and SEO",
   gaTrackingId: null,
   googleTagManagerId: null,
+  createPosts: false,
 
   /**** THEME OPTIONS ****/
   cssVarPrefix: "wild",

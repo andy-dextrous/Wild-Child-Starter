@@ -9,7 +9,7 @@ export const Head = ({ location, data, pageContext }) => (
 
 export default PostPage
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   query ($id: String!) {
     wpPost(id: { eq: $id }) {
       title

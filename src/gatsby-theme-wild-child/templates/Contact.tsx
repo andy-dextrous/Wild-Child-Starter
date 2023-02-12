@@ -9,7 +9,7 @@ export const Head = ({ location, data, pageContext }) => (
 
 export default ContactPage
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   query ($uri: String!) {
     wpPage(uri: { eq: $uri }) {
       title

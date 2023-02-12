@@ -5,6 +5,9 @@ const SITE_CONFIG = {
 
   /**** THEME OPTIONS ****/
   cssVarPrefix: "wild",
+
+  /**** BUILD OPTIONS ****/
+  siteMapOptions: {},
 }
 
 module.exports = SITE_CONFIG

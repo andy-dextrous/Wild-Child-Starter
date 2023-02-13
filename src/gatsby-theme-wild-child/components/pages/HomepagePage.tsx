@@ -1,5 +1,5 @@
 import { Heading, VStack } from "@chakra-ui/react"
-import { useLocalFile } from "gatsby-theme-wild-child"
+import { useLocalFile } from "gatsby-theme-wild-child/src/hooks/useLocalFile"
 import Layout from "gatsby-theme-wild-child/src/components/Layout"
 import Section from "gatsby-theme-wild-child/src/components/Section"
 import React from "react"

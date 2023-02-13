@@ -8,6 +8,7 @@ const SITE_CONFIG = {
 
   /**** BUILD OPTIONS ****/
   siteMapOptions: {},
+  createPosts: false,
 }
 
 module.exports = SITE_CONFIG

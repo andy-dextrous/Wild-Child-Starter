@@ -23,7 +23,7 @@ function Footer() {
   const footerMenu1 = useMenuQuery("FOOTER_MENU_1")
   const footerMenu2 = useMenuQuery("FOOTER_MENU_2")
   const footerMenu3 = useMenuQuery("FOOTER_MENU_3")
-  const { contact, googleMapsLink } = useThemeOptions()
+  const { contact, googleMapsLink, businessName } = useThemeOptions()
 
   return (
     <>
@@ -266,7 +266,7 @@ function Footer() {
       </Section>
       <Center bg="primary.default" w="100vw" bottom="0" left="0" h="60px">
         <Text color="white" fontSize="sm" mb="0">
-          {`Copyright © ${new Date().getFullYear()} | VZX`}
+          {`Copyright © ${new Date().getFullYear()} | ${businessName} | All Rights Reserved`}
         </Text>
       </Center>
     </>

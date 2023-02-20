@@ -7,7 +7,6 @@ const SITE_CONFIG = {
   cssVarPrefix: "wild",
 
   /**** BUILD OPTIONS ****/
-  siteMapOptions: {},
   createPosts: false,
 }
 

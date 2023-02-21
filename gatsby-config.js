@@ -1,4 +1,3 @@
-require("dotenv").config()
 const defaultOptions = require("gatsby-theme-wild-child/defaultOptions")
 const options = require("./wc-config")
 

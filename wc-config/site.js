@@ -8,6 +8,7 @@ const SITE_CONFIG = {
 
   /**** BUILD OPTIONS ****/
   createPosts: false,
+  createPages: false,
 }
 
 module.exports = SITE_CONFIG
